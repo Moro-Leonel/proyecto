@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav div a img {
+  border-radius: 50%;
+}
+nav div a img:hover {
+  transform: rotate(360deg);
+  transition: 1s;
+}
+
+#menu {
+  font-style: inherit;
+  font-size: x-large;
+  font-weight: bold;
+}
+#menu li a {
+  color: black;
+}
+#menu li a:hover {
+  color: beige;
+}
+
+footer .redes {
+  text-decoration: solid;
+  text-align: center;
+  list-style-type: none;
+}
+
+div.footer-bottom {
+  font-weight: bold;
+  text-align: center;
+}
+
+body header {
+  width: auto;
+  height: 120px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(47deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 18%, rgba(0, 212, 255, 0.8491771709) 92%);
+}
+
+body main section div.globitos {
+  text-align: center;
+}
+body main section div.globitos img {
+  height: 120px;
+  width: 120px;
+  border-radius: 45%;
+  padding: 10px;
+}
+body main section div.globitos img:hover {
+  height: 122px;
+  width: 122px;
+  filter: grayscale(1);
+}
+
+body main section div.promos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 50px;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  background-color: rgb(17, 0, 255);
+}
+body main section div.promos h3 {
+  color: antiquewhite;
+}
+body main section div.masvendido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 50px;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  background-color: rgb(17, 0, 255);
+}
+body main section div.masvendido h3 {
+  color: antiquewhite;
+}
+
+/*# sourceMappingURL=style.css.map */

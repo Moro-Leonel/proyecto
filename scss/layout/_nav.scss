@@ -1,0 +1,28 @@
+nav {
+    div {
+        a {
+            img {
+                border-radius: 50%;
+            }
+
+            img:hover {
+                transform: rotate(360deg);
+                transition: 1s;
+            }
+        }
+    }
+}
+
+#menu {
+    font-style: inherit;
+    font-size: x-large;
+    font-weight: bold;
+
+    li a {
+        color: black;
+    }
+
+    li a:hover {
+        color: beige
+    }
+}
