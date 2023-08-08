@@ -25,82 +25,6 @@ nav div a img:hover {
   color: beige;
 }
 
-/* @-webkit-keyframes wobble-hor-bottom {
-
-    0%,
-    100% {
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-    }
-
-    15% {
-        -webkit-transform: translateX(-30px) rotate(-6deg);
-        transform: translateX(-30px) rotate(-6deg);
-    }
-
-    30% {
-        -webkit-transform: translateX(15px) rotate(6deg);
-        transform: translateX(15px) rotate(6deg);
-    }
-
-    45% {
-        -webkit-transform: translateX(-15px) rotate(-3.6deg);
-        transform: translateX(-15px) rotate(-3.6deg);
-    }
-
-    60% {
-        -webkit-transform: translateX(9px) rotate(2.4deg);
-        transform: translateX(9px) rotate(2.4deg);
-    }
-
-    75% {
-        -webkit-transform: translateX(-6px) rotate(-1.2deg);
-        transform: translateX(-6px) rotate(-1.2deg);
-    }
-}
-
-@keyframes wobble-hor-bottom {
-
-    0%,
-    100% {
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-    }
-
-    15% {
-        -webkit-transform: translateX(-30px) rotate(-6deg);
-        transform: translateX(-30px) rotate(-6deg);
-    }
-
-    30% {
-        -webkit-transform: translateX(15px) rotate(6deg);
-        transform: translateX(15px) rotate(6deg);
-    }
-
-    45% {
-        -webkit-transform: translateX(-15px) rotate(-3.6deg);
-        transform: translateX(-15px) rotate(-3.6deg);
-    }
-
-    60% {
-        -webkit-transform: translateX(9px) rotate(2.4deg);
-        transform: translateX(9px) rotate(2.4deg);
-    }
-
-    75% {
-        -webkit-transform: translateX(-6px) rotate(-1.2deg);
-        transform: translateX(-6px) rotate(-1.2deg);
-    }
-}
-
-wobble-hor-bottom {
-    -webkit-animation: wobble-hor-bottom 0.8s both;
-    animation: wobble-hor-bottom 0.8s both;
-} */
 footer .redes {
   text-decoration: solid;
   text-align: center;
@@ -115,7 +39,7 @@ div.footer-bottom {
 body header {
   width: auto;
   height: 120px;
-  background: rgb(2, 0, 36);
+  /* background: rgb(2, 0, 36); */
   background: linear-gradient(47deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 18%, rgba(0, 212, 255, 0.8491771709) 92%);
 }
 
@@ -127,10 +51,10 @@ body main section div.globitos img {
   width: 120px;
   border-radius: 45%;
   padding: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 body main section div.globitos img:hover {
-  height: 122px;
-  width: 122px;
+  transform: scale(1.05);
   filter: grayscale(1);
 }
 
@@ -169,6 +93,27 @@ body main section div.masvendido h3 {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.carousel-inner img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 30px;
+  height: 40px;
+  top: 50%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent;
 }
 
 /* * {

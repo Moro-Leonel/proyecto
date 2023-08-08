@@ -2,31 +2,34 @@ body {
     header {
         width: auto;
         height: 120px;
-        background: rgb(2, 0, 36);
+        /* background: rgb(2, 0, 36); */
         background: linear-gradient(47deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 18%, rgba(0, 212, 255, 0.8491771708683473) 92%);
     }
 }
 
-body main {
-    section {
-        div.globitos {
-            text-align: center;
+body {
+    main {
+        section {
+            div.globitos {
+                text-align: center;
 
-            img {
-                height: 120px;
-                width: 120px;
-                border-radius: 45%;
-                padding: 10px;
+                img {
+                    height: 120px;
+                    width: 120px;
+                    border-radius: 45%;
+                    padding: 10px;
+                    transition: transform 0.3s ease, filter 0.3s ease;
 
-                &:hover {
-                    height: 122px;
-                    width: 122px;
-                    filter: grayscale(1);
+                    &:hover {
+                        transform: scale(1.05);
+                        filter: grayscale(1);
+                    }
                 }
             }
         }
     }
 }
+
 
 
 body main section {
@@ -64,10 +67,32 @@ body main section {
 .image-tag {
     display: flex;
     justify-content: center;
+
     img {
         display: block;
         max-width: 100%;
         height: auto;
     }
+}
 
+.carousel-inner img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 30px;
+    height: 40px;
+    top: 50%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent;
 }
