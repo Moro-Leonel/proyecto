@@ -1,6 +1,6 @@
 body {
     header {
-        width:auto;
+        width: auto;
         height: 120px;
         background: rgb(2, 0, 36);
         background: linear-gradient(47deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 18%, rgba(0, 212, 255, 0.8491771708683473) 92%);
@@ -59,4 +59,15 @@ body main section {
             color: antiquewhite
         }
     }
+}
+
+.image-tag {
+    display: flex;
+    justify-content: center;
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
 }

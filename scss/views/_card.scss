@@ -1,0 +1,43 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.carousel-card {
+    display: flex;    
+    overflow-y: auto;
+    background-color: beige;
+
+}
+.card {
+    position: relative;
+    padding: 1rem;
+}
+.card img {
+    width: 200px;
+    object-fit: cover;
+    height: 300px;
+}
+.cuerpo-card {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;   
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.cuerpo-card h5,
+.cuerpo-card p {
+    margin: 0;
+}
+
+.card a:hover ~ .cuerpo-card {
+    visibility: visible;
+    transform: translate(5px);
+    transition: all 1s;
+} */

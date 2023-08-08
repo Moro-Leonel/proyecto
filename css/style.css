@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Variables */
 nav div a img {
   border-radius: 50%;
 }
@@ -24,6 +25,82 @@ nav div a img:hover {
   color: beige;
 }
 
+/* @-webkit-keyframes wobble-hor-bottom {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+@keyframes wobble-hor-bottom {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+wobble-hor-bottom {
+    -webkit-animation: wobble-hor-bottom 0.8s both;
+    animation: wobble-hor-bottom 0.8s both;
+} */
 footer .redes {
   text-decoration: solid;
   text-align: center;
@@ -83,5 +160,59 @@ body main section div.masvendido {
 body main section div.masvendido h3 {
   color: antiquewhite;
 }
+
+.image-tag {
+  display: flex;
+  justify-content: center;
+}
+.image-tag img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.carousel-card {
+    display: flex;    
+    overflow-y: auto;
+    background-color: beige;
+
+}
+.card {
+    position: relative;
+    padding: 1rem;
+}
+.card img {
+    width: 200px;
+    object-fit: cover;
+    height: 300px;
+}
+.cuerpo-card {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;   
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.cuerpo-card h5,
+.cuerpo-card p {
+    margin: 0;
+}
+
+.card a:hover ~ .cuerpo-card {
+    visibility: visible;
+    transform: translate(5px);
+    transition: all 1s;
+} */
 
 /*# sourceMappingURL=style.css.map */
