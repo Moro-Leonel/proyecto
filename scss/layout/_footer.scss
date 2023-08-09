@@ -1,11 +1,33 @@
 footer {
+    background-color: $bg-color-promos;
+    
+    position: relative;
     .redes {
+        
         text-decoration: solid;
         text-align: center;
         list-style-type: none;
     }
 }
-    div.footer-bottom {
-        font-weight: bold;
-        text-align: center;
-    }
+h3{
+    color: rgba(0,0,0, 0.8);
+}
+div.footer-bottom {
+    color: rgba(0,0,0, 1);
+    font-weight: bold;
+    text-align: center;
+}
+
+.custom-link {
+    color: white;
+    /* Cambia el color del texto a negro */
+    text-decoration: none;
+    /* Quita la decoración de subrayado */
+    transition: transform 0.3s ease, filter 0.3s ease
+}
+
+.custom-link:hover {
+    color: burlywood;
+transform: scale(1.05);;
+    /* Cambia el color del texto al hacer hover */
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -7,40 +8,66 @@
 /* Variables */
 nav div a img {
   border-radius: 50%;
+  background-color: whitesmoke;
 }
 nav div a img:hover {
   transform: rotate(360deg);
   transition: 1s;
 }
+nav div div ul li {
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
-#menu {
+#navbarSupportedContent {
   font-style: inherit;
   font-size: x-large;
   font-weight: bold;
 }
-#menu li a {
+#navbarSupportedContent li a {
   color: black;
 }
-#menu li a:hover {
+#navbarSupportedContent li a:hover {
   color: beige;
 }
 
+footer {
+  background-color: rgba(0, 100, 100, 0.8);
+  position: relative;
+}
 footer .redes {
   text-decoration: solid;
   text-align: center;
   list-style-type: none;
 }
 
+h3 {
+  color: rgba(0, 0, 0, 0.8);
+}
+
 div.footer-bottom {
+  color: rgb(0, 0, 0);
   font-weight: bold;
   text-align: center;
 }
 
+.custom-link {
+  color: white;
+  /* Cambia el color del texto a negro */
+  text-decoration: none;
+  /* Quita la decoración de subrayado */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.custom-link:hover {
+  color: burlywood;
+  transform: scale(1.05);
+  /* Cambia el color del texto al hacer hover */
+}
+
 body header {
   width: auto;
-  height: 120px;
-  /* background: rgb(2, 0, 36); */
-  background: linear-gradient(47deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 18%, rgba(0, 212, 255, 0.8491771709) 92%);
+  background: rgba(0, 100, 100, 0.8);
 }
 
 body main section div.globitos {
@@ -49,7 +76,7 @@ body main section div.globitos {
 body main section div.globitos img {
   height: 120px;
   width: 120px;
-  border-radius: 45%;
+  border-radius: 50%;
   padding: 10px;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -66,9 +93,9 @@ body main section div.promos {
   height: 50px;
   margin-left: 10vh;
   margin-right: 10vh;
-  background-color: rgb(17, 0, 255);
+  background-color: rgba(0, 100, 100, 0.8);
 }
-body main section div.promos h3 {
+body main section div.promos h1 {
   color: antiquewhite;
 }
 body main section div.masvendido {
@@ -79,13 +106,23 @@ body main section div.masvendido {
   height: 50px;
   margin-left: 10vh;
   margin-right: 10vh;
-  background-color: rgb(17, 0, 255);
+  background-color: rgba(0, 100, 100, 0.8);
 }
 body main section div.masvendido h3 {
   color: antiquewhite;
 }
 
+.btn-outline-custom {
+  border-color: black;
+  color: black;
+}
+.btn-outline-custom:hover {
+  background-color: black;
+  color: white;
+}
+
 .image-tag {
+  opacity: 0.5;
   display: flex;
   justify-content: center;
 }

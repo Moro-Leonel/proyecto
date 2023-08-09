@@ -1,8 +1,10 @@
 nav {
     div {
-        a {
+        a {//animacion del logo de TRACE
+
             img {
                 border-radius: 50%;
+                background-color: whitesmoke;
             }
 
             img:hover {
@@ -10,10 +12,19 @@ nav {
                 transition: 1s;
             }
         }
+
+        div {//botones del menu hamburguesa
+            ul {
+                li {
+                    padding-left: 5%;
+                    padding-right: 5%;
+                }
+            }
+        }
     }
 }
 
-#menu {
+#navbarSupportedContent {
     font-style: inherit;
     font-size: x-large;
     font-weight: bold;
