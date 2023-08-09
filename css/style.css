@@ -65,6 +65,37 @@ div.footer-bottom {
   /* Cambia el color del texto al hacer hover */
 }
 
+.tarjeta-pagos {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.redes2 {
+  color: #333;
+  font-size: 18px;
+}
+
+.tarjeta-pagos ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.tarjeta-pagos li {
+  margin: 0 10px;
+}
+
+.tarjeta-pagos img {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta-pagos img:hover {
+  transform: scale(1.1);
+}
+
 body header {
   width: auto;
   background: rgba(0, 100, 100, 0.8);
