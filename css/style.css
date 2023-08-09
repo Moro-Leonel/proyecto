@@ -132,9 +132,13 @@ body main section div.masvendido h3 {
   height: auto;
 }
 
+.carousel {
+  height: 400px;
+}
+
 .carousel-inner img {
   width: 100%;
-  max-height: 400px;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -153,6 +157,17 @@ body main section div.masvendido h3 {
   background-color: transparent;
 }
 
+@media screen and (max-width: 479px) {
+  .promos h1 {
+    font-size: large;
+  }
+  .masvendido h3 {
+    font-size: large;
+  }
+  .image-tag img {
+    height: 80px;
+  }
+}
 /* * {
     margin: 0;
     padding: 0;
